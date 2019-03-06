@@ -13,10 +13,11 @@ public class MainClass {
         System.out.println("start");
         ApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
         Quoter quoter = context.getBean(Quoter.class);
-        while (true){
-            Thread.sleep(200);
-            quoter.sayQuoter();
-        }
+        quoter.sayQuoter();
+//        while (true){
+//            Thread.sleep(200);
+//            quoter.sayQuoter();
+//        }
 
     }
 

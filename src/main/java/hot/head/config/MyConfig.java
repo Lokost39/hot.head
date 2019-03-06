@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan("hot.head.*")
 public class MyConfig {
+
+
     @Bean
     public Quoter quoter(){
         return new MyQuoter("message");

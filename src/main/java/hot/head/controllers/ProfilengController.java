@@ -1,7 +1,7 @@
-package hot.head.annotation.controllers;
+package hot.head.controllers;
 
 public class ProfilengController implements ProfilengControllerMBean{
-    private boolean enable;
+    private boolean enable = true;
 
     public boolean isEnable() {
         return enable;

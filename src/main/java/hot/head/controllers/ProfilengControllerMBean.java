@@ -1,4 +1,4 @@
-package hot.head.annotation.controllers;
+package hot.head.controllers;
 
 public interface ProfilengControllerMBean {
     void setEnable(boolean enable);

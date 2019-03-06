@@ -1,6 +1,5 @@
 package hot.head.config;
 
-import hot.head.annotation.InjectMyRamdomIntAnnotationBeanPostProcessor;
 import hot.head.bean.MyQuoter;
 import hot.head.bean.Quoter;
 import org.springframework.context.annotation.Bean;

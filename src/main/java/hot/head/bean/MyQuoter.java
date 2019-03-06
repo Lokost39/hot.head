@@ -1,9 +1,11 @@
 package hot.head.bean;
 
 import hot.head.annotation.MyInjectRandomInt;
+import hot.head.annotation.MyProfile;
 
 import javax.annotation.PostConstruct;
 
+@MyProfile
 public class MyQuoter implements Quoter {
 
     @MyInjectRandomInt(min = 2, max = 7)

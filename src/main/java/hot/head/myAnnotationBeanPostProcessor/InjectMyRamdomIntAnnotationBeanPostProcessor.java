@@ -1,5 +1,6 @@
-package hot.head.annotation;
+package hot.head.myAnnotationBeanPostProcessor;
 
+import hot.head.annotation.MyInjectRandomInt;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;

@@ -1,5 +1,6 @@
 package hot.head.bean;
 
+import hot.head.annotation.DeprecatedClass;
 import hot.head.annotation.MyInjectRandomInt;
 import hot.head.annotation.MyProfile;
 import hot.head.annotation.PostProxy;
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 
 @MyProfile
+//@DeprecatedClass(newImpl = NewMyQuoter.class)
 public class MyQuoter implements Quoter {
 
 //    @Autowired

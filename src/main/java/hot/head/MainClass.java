@@ -2,6 +2,8 @@ package hot.head;
 
 import hot.head.bean.MyQuoter;
 import hot.head.bean.Quoter;
+import hot.head.bean.deprecation.DeprecatedClass;
+import hot.head.bean.deprecation.OldClass;
 import hot.head.config.MyConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -14,6 +16,11 @@ public class MainClass {
         ApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
         Quoter quoter = context.getBean(Quoter.class);
         quoter.sayQuoter();
+
+        DeprecatedClass deprecatedClass = context.getBean(DeprecatedClass.class);
+        deprecatedClass.test1();
+        deprecatedClass.test2();
+
 //        while (true){
 //            Thread.sleep(200);
 //            quoter.sayQuoter();

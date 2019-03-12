@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 public class OldClass implements hot.head.bean.deprecation.DeprecatedClass {
     private OldClass() {
     }
-
     @Bean
     public OldClass getOldClass(){
         return new OldClass();

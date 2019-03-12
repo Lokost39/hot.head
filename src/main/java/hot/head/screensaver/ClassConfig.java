@@ -10,7 +10,7 @@ import java.util.Random;
 public class ClassConfig {
     @Bean
 //    @Scope(value = "prototype", proxyMode = ScopedProxyMode.TARGET_CLASS)
-    @Scope(value = "prototype")
+    @Scope(value = "periodical")
     public Color color(){
         Random random = new Random();
         return new Color(random.nextInt(255),random.nextInt(255),random.nextInt(255));

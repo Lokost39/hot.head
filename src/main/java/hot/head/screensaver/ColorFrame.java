@@ -9,9 +9,7 @@ import javax.swing.*;
 import java.util.Random;
 
 @Component
-public class ColorFrame extends JFrame {
-    @Autowired
-    private Color color;
+public abstract class ColorFrame extends JFrame {
 
     public ColorFrame(){
         setSize(200, 200);
@@ -22,8 +20,10 @@ public class ColorFrame extends JFrame {
     public void showOnRandomPlace(){
         Random random = new Random();
         setLocation(random.nextInt(800), random.nextInt(600));
-        getContentPane().setBackground(color);
+        getContentPane().setBackground(getColor());
         repaint();
     }
+
+    protected abstract Color getColor() ;
 
 }

@@ -30,7 +30,9 @@ public class ClassConfig {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ClassConfig.class);
         while (true){
             Thread.sleep(200);
-            context.getBean(ColorFrame.class).showOnRandomPlace();
+//            context.getBean(ColorFrame.class).showOnRandomPlace();
+            ((ColorFrameLookup)context.getBean("ColorFrameLookup")).showOnRandomPlace();
         }
+
     }
 }

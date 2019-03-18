@@ -5,6 +5,7 @@ import hot.head.bean.Quoter;
 import hot.head.bean.deprecation.DeprecatedClass;
 import hot.head.bean.deprecation.OldClass;
 import hot.head.config.MyConfig;
+import hot.head.listener.events.MyEvents;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -20,6 +21,8 @@ public class MainClass {
         DeprecatedClass deprecatedClass = context.getBean(DeprecatedClass.class);
         deprecatedClass.test1();
         deprecatedClass.test2();
+
+        context.publishEvent(new MyEvents(new Object(), "Мой слушатель"));
 
 //        while (true){
 //            Thread.sleep(200);

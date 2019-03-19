@@ -8,6 +8,11 @@ import org.springframework.stereotype.Component;
 public class MyEventsListener implements ApplicationListener<MyEvents> {
     @Override
     public void onApplicationEvent(MyEvents event) {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         System.out.println(event.getMessage());
     }
 }

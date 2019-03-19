@@ -23,7 +23,7 @@ public class MainClass {
         deprecatedClass.test2();
 
         context.publishEvent(new MyEvents(new Object(), "Мой слушатель"));
-
+        System.out.println("главный поток");
 //        while (true){
 //            Thread.sleep(200);
 //            quoter.sayQuoter();

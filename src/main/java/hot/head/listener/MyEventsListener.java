@@ -9,7 +9,7 @@ public class MyEventsListener implements ApplicationListener<MyEvents> {
     @Override
     public void onApplicationEvent(MyEvents event) {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(80);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

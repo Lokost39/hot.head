@@ -24,6 +24,12 @@ public class MainClass {
 
         context.publishEvent(new MyEvents(new Object(), "Мой слушатель"));
         System.out.println("главный поток");
+
+        String a = "Hello";
+        String b = "Hello";
+
+        System.out.println(a == b);
+
 //        while (true){
 //            Thread.sleep(200);
 //            quoter.sayQuoter();
